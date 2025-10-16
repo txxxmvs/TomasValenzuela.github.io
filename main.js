@@ -12,3 +12,34 @@ setTimeout(() => {
     cvModalContent.classList.add('scale-100', 'opacity-100');
 }, 10);
 });
+
+
+
+// Funciones para abrir y cerrar el modal de imagen
+function closeModal() {
+cvModal.classList.remove('opacity-100');
+cvModalContent.classList.remove('scale-100', 'opacity-100');
+cvModalContent.classList.add('scale-90', 'opacity-0');
+setTimeout(() => {
+    cvModal.classList.add('hidden');
+}, 300);
+}
+
+closeCvModal.addEventListener('click', closeModal);
+
+cvModal.addEventListener('click', (e) => {
+if (e.target === cvModal) closeModal();
+});
+
+
+  function openImgModal(src) {
+    document.getElementById('imgModalContent').src = src;
+    document.getElementById('imgModal').classList.remove('hidden');
+  }
+  function closeImgModal() {
+    document.getElementById('imgModal').classList.add('hidden');
+    document.getElementById('imgModalContent').src = '';
+  }
+  document.getElementById('imgModal').addEventListener('click', function(e) {
+    if (e.target === this) closeImgModal();
+  });
