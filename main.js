@@ -1,3 +1,4 @@
+// Funciones para abrir y cerrar el modal de imagen
 const cvBtn = document.getElementById('cvBtn');
 const cvModal = document.getElementById('cvModal');
 const cvModalContent = document.getElementById('cvModalContent');
@@ -12,6 +13,9 @@ setTimeout(() => {
 }, 10);
 });
 
+
+
+// Funciones para abrir y cerrar el modal de imagen
 function closeModal() {
 cvModal.classList.remove('opacity-100');
 cvModalContent.classList.remove('scale-100', 'opacity-100');
@@ -26,3 +30,16 @@ closeCvModal.addEventListener('click', closeModal);
 cvModal.addEventListener('click', (e) => {
 if (e.target === cvModal) closeModal();
 });
+
+
+  function openImgModal(src) {
+    document.getElementById('imgModalContent').src = src;
+    document.getElementById('imgModal').classList.remove('hidden');
+  }
+  function closeImgModal() {
+    document.getElementById('imgModal').classList.add('hidden');
+    document.getElementById('imgModalContent').src = '';
+  }
+  document.getElementById('imgModal').addEventListener('click', function(e) {
+    if (e.target === this) closeImgModal();
+  });
