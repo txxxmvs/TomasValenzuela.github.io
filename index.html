@@ -165,14 +165,18 @@
       <div class="bg-zinc-900 rounded-lg p-4 shadow">
         <h3 class="text-lg font-semibold text-sky-300 mb-1">Gestor para LayBack Kicks</h3>
         <p class="text-gray-200 mb-2">
-          Proyecto de Titulo: Aplicación web que permite gestionar eficientemente el inventario de zapatillas y facilita la toma de decisiones mediante el análisis de las ventas realizadas por la tienda.<br>
-          Img 1: Logo de LayBack Kicks. <br>
-          Img 2: Modelo de datos del proyecto.
+          Proyecto de Titulo: Aplicación web que permite gestionar eficientemente el inventario de zapatillas y facilita la toma de decisiones mediante el análisis de las ventas realizadas por la tienda.
         </p>
           <!-- Galería de imágenes del proyecto -->
         <div class="grid grid-cols-3 gap-2 mb-3">
-            <img src="assets/proyecto1/logo.png" alt="LayBack Kicks 1" class="rounded-lg object-cover h-32 w-full cursor-pointer" onclick="openImgModal(this.src)" />
-            <img src="assets/proyecto1/modelamieno.png" alt="LayBack Kicks 2" class="rounded-lg object-cover h-32 w-full cursor-pointer" onclick="openImgModal(this.src)" />
+            <figure class="flex flex-col items-center">
+              <img src="assets/proyecto1/logo.png" alt="LayBack Kicks logo" class="rounded-lg object-cover h-32 w-full cursor-pointer" onclick="openImgModal(this.src)" />
+              <figcaption class="text-sm text-gray-300 mt-1">Logotipo de LayBack Kicks (identidad de marca).</figcaption>
+            </figure>
+            <figure class="flex flex-col items-center">
+              <img src="assets/proyecto1/modelamieno.png" alt="Modelo de datos LayBack Kicks" class="rounded-lg object-cover h-32 w-full cursor-pointer" onclick="openImgModal(this.src)" />
+              <figcaption class="text-sm text-gray-300 mt-1">Diagrama del modelo de datos del proyecto (entidades y relaciones).</figcaption>
+            </figure>
         </div>
         <a href="https://github.com/txxxmvs/capstone" target="_blank" class="inline-flex items-center gap-2 bg-black text-white px-3 py-1 rounded-full hover:bg-sky-700 transition" title="Ver repositorio en GitHub">
           <svg width="20" height="20"><use xlink:href="./assets/sprite.svg#github" /></svg>
@@ -191,7 +195,29 @@
           Ver repositorio
         </a>
       </div>
-    </div>
+
+      <!-- Proyecto 3 -->
+      <div class="bg-zinc-900 rounded-lg p-4 shadow">
+        <h3 class="text-lg font-semibold text-sky-300 mb-1">Análisis y predicción de próxima lluvia en Melbourne, Australia.</h3>
+        <p class="text-gray-200 mb-2">
+          Este proyecto consiste en un análisis de datos meteorológicos y realizar predicciones sobre la probabilidad de lluvia en Melbourne, Australia.
+        </p>
+          <!-- Galería de imágenes del proyecto -->
+        <div class="grid grid-cols-3 gap-2 mb-3">
+            <figure class="flex flex-col items-center">
+              <img src="assets/proyecto3/analisis1.png" alt="Analisis 1" class="rounded-lg object-cover h-32 w-full cursor-pointer" onclick="openImgModal(this.src)" />
+              <figcaption class="text-sm text-gray-300 mt-1">Demostración de la predicción del modelo: entrada de características y resultado con la probabilidad estimada de lluvia.</figcaption>
+            </figure>
+            <figure class="flex flex-col items-center">
+              <img src="assets/proyecto3/analisis2.png" alt="Analisis 2" class="rounded-lg object-cover h-32 w-full cursor-pointer" onclick="openImgModal(this.src)" />
+              <figcaption class="text-sm text-gray-300 mt-1">Visualizaciones del análisis y métricas del Modelo.</figcaption>
+            </figure>
+        </div>
+        <a href="https://github.com/txxxmvs/Mineria/blob/main/mineria.ipynb" target="_blank" class="inline-flex items-center gap-2 bg-black text-white px-3 py-1 rounded-full hover:bg-sky-700 transition" title="Ver repositorio en GitHub">
+          <svg width="20" height="20"><use xlink:href="./assets/sprite.svg#github" /></svg>
+          Ver repositorio
+        </a>
+      </div>
 
     <!-- Modal para imagen ampliada -->
     <div id="imgModal" class="fixed inset-0 flex items-center justify-center z-50 hidden">
