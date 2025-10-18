@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Tomas</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head> 
+<body class="max-w-xl mx-auto
+  min-h-dvh
+  bg-gradient-to-b from-black via-sky-950 to-gray-800
+">
+  <header class="text-white flex flex-col justify-center items-center mb-8 -mt-4">
+    <img alt="Tomas" src="./assets/img2.jpeg"
+      class="h-[40vh] object-cover mask-radial-at-center mask-radial-from-50% mask-radial-to-74% animate-pulse-fade-in">
+    <h1 class="text-3xl font-extrabold leading-tight mt-1 font-display">
+      Tomas Valenzuela
+    </h1>
+  </header>
+
+  <!-- Redes Sociales y CV -->
+  <p class="text-white text-center mb-6 px-4">
+    Redes y CV:
+  </p>
+
+  <section class="flex gap-2 justify-center">
+
+    <!-- LinkedIn -->
+    <a class="bg-white p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform" href="https://www.linkedin.com/in/tomas-valenzuela-b7b2ab1bb/"
+      target="_blank" aria-label="LinkedIn" title="Ir a LinkedIn de @Tomas">
+      <svg width="28" height="28">
+        <use xlink:href="./assets/sprite.svg#linkedin" />
+      </svg>
+    </a>
+
+    <!-- GitHub -->
+    <a class="bg-black p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform" href="https://github.com/txxxmvs"
+      target="_blank" aria-label="GitHub" title="Ir a GitHub de @Txxxmvs">
+      <svg width="28" height="28">
+        <use xlink:href="./assets/sprite.svg#github" />
+      </svg>
+    </a>
+
+    <!-- QR/CV Button -->
+    <button id="cvBtn" class="bg-white p-2 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform" title="Ver CV y QR">
+      <span class="text-white text-xl">
+        <img src="./assets/img3.png" />
+      </span>
+    </button>
+  </section>
+
+  <!-- Modal CV/QR -->
+  <div id="cvModal" class="fixed inset-0 bg-opacity-60 flex items-center justify-center z-50 hidden transition-opacity duration-300">
+    <div id="cvModalContent" class="bg-white rounded-lg p-6 max-w-xs text-center relative transform scale-90 opacity-0 transition-all duration-300">
+      <button id="closeCvModal" class="absolute top-2 right-2 text-gray-500 hover:text-black text-xl">&times;</button>
+      <h2 class="text-lg font-bold mb-2">Mi CV y QR</h2>
+      <img src="./assets/qr.jpeg" alt="QR" class="mx-auto mb-4 w-32 h-32 object-contain" />
+      <a href="./assets/CV_TV.pdf" download class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Descargar CV PDF</a>
+    </div>
+  </div>
+
+  <!-- Presentación breve -->
+  <section class="mb-6 px-4">
+    <h2 class="text-xl font-bold text-white mb-2">Sobre mí</h2>
+    <p class="text-gray-200">
+      Me especializo en la resolución de problemas mediante soluciones tecnológicas eficientes, combinando habilidades en programación, análisis de datos y despliegue de entornos. Me considero una persona comprometida, proactiva y enfocada en el aprendizaje continuo, con orientación a resultados y al trabajo en equipo.
+    </p>
+  </section>
+
+  <!-- Habilidades técnicas -->
+  <section class="mb-8 px-4">
+    <h2 class="text-xl font-bold text-white mb-2">Habilidades Técnicas</h2>
+
+    <!-- Lenguajes -->
+    <h3 class="text-lg font-semibold text-sky-300 mt-4 mb-2">Lenguajes</h3>
+    <ul class="space-y-2">
+      <li class="flex items-center gap-2 text-gray-200">
+        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#javascript" /></svg>
+        JavaScript
+      </li>
+      <li class="flex items-center gap-2 text-gray-200">
+        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#php" /></svg>
+        PHP
+      </li>
+      <li class="flex items-center gap-2 text-gray-200">
+        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#python" /></svg>
+        Python
+      </li>
+    </ul>
+
+    <!-- Cloud & BI -->
+    <h3 class="text-lg font-semibold text-sky-300 mt-4 mb-2">Cloud & BI</h3>
+    <ul class="space-y-2 mb-4">
+      <li class="flex items-center gap-2 text-gray-200">
+        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#gcp" /></svg>
+        Google Cloud Platform (GCP)
+      </li>
+      <li class="flex items-center gap-2 text-gray-200">
+        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#powerbi" /></svg>
+        Power BI
+      </li>
+    </ul>
+
+    <!-- Desarrollo -->
+    <h3 class="text-lg font-semibold text-sky-300 mt-4 mb-2">Desarrollo</h3>
+    <ul class="space-y-2 mb-4">
+      <li class="flex items-center gap-2 text-gray-200">
+        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#html5" /></svg>
+        HTML5
+      </li>
+      <li class="flex items-center gap-2 text-gray-200">
+        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#css" /></svg>
+        CSS
+      </li>
+      <li class="flex items-center gap-2 text-gray-200">
+        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#react" /></svg>
+        React
+      </li>
+      <li class="flex items-center gap-2 text-gray-200">
+        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#tailwind" /></svg>
+        Tailwind CSS
+      </li>
+      <li class="flex items-center gap-2 text-gray-200">
+        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#nodejs" /></svg>
+        Node.js
+      </li>
+      <li class="flex items-center gap-2 text-gray-200">
+        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#express" /></svg>
+        Express
+      </li>
+      <li class="flex items-center gap-2 text-gray-200">
+        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#github" /></svg>
+        GitHub
+      </li>
+    </ul>
+
+    <!-- Bases de datos -->
+    <h3 class="text-lg font-semibold text-sky-300 mt-4 mb-2">Bases de datos</h3>
+    <ul class="space-y-2 mb-4">
+      <li class="flex items-center gap-2 text-gray-200">
+        <svg width="24" height="24"><use/></svg>
+        PostgreSQL
+      </li>
+      <li class="flex items-center gap-2 text-gray-200">
+        <svg width="24" height="24"><use/></svg>
+        HeidiSQL
+      </li>
+      <li class="flex items-center gap-2 text-gray-200">
+        <svg width="24" height="24"><use/></svg>
+        MariaDB
+      </li>
+      <li class="flex items-center gap-2 text-gray-200">
+        <svg width="24" height="24"><use/></svg>
+        BigQuery
+      </li>
+    </ul>
+  </section>
+
+  <!-- Proyectos -->
+  <section class="mb-8 px-4">
+    <h2 class="text-xl font-bold text-white mb-4">Proyectos</h2>
+    <div class="space-y-6">
+
+      <!-- Proyecto 1 -->
+      <div class="bg-zinc-900 rounded-lg p-4 shadow">
+        <h3 class="text-lg font-semibold text-sky-300 mb-1">Gestor para LayBack Kicks</h3>
+        <p class="text-gray-200 mb-2">
+          Proyecto de Titulo: Aplicación web que permite gestionar eficientemente el inventario de zapatillas y facilita la toma de decisiones mediante el análisis de las ventas realizadas por la tienda.
+        </p>
+          <!-- Galería de imágenes del proyecto -->
+        <div class="grid grid-cols-3 gap-2 mb-3">
+            <figure class="flex flex-col items-center">
+              <img src="assets/proyecto1/logo.png" alt="LayBack Kicks logo" class="rounded-lg object-cover h-32 w-full cursor-pointer" onclick="openImgModal(this.src)" />
+              <figcaption class="text-sm text-gray-300 mt-1">Logotipo de LayBack Kicks (identidad de marca).</figcaption>
+            </figure>
+            <figure class="flex flex-col items-center">
+              <img src="assets/proyecto1/modelamieno.png" alt="Modelo de datos LayBack Kicks" class="rounded-lg object-cover h-32 w-full cursor-pointer" onclick="openImgModal(this.src)" />
+              <figcaption class="text-sm text-gray-300 mt-1">Diagrama del modelo de datos del proyecto (entidades y relaciones).</figcaption>
+            </figure>
+        </div>
+        <a href="https://github.com/txxxmvs/capstone" target="_blank" class="inline-flex items-center gap-2 bg-black text-white px-3 py-1 rounded-full hover:bg-sky-700 transition" title="Ver repositorio en GitHub">
+          <svg width="20" height="20"><use xlink:href="./assets/sprite.svg#github" /></svg>
+          Ver repositorio
+        </a>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="bg-zinc-900 rounded-lg p-4 shadow">
+        <h3 class="text-lg font-semibold text-sky-300 mb-1">Página de Presentación</h3>
+        <p class="text-gray-200 mb-2">
+          Página web personal para mostrar mi portafolio y habilidades técnicas.
+        </p>
+        <a href="https://github.com/txxxmvs/TomasValenzuela.github.io" target="_blank" class="inline-flex items-center gap-2 bg-black text-white px-3 py-1 rounded-full hover:bg-sky-700 transition" title="Ver repositorio en GitHub">
+          <svg width="20" height="20"><use xlink:href="./assets/sprite.svg#github" /></svg>
+          Ver repositorio
+        </a>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="bg-zinc-900 rounded-lg p-4 shadow">
+        <h3 class="text-lg font-semibold text-sky-300 mb-1">Análisis y predicción de próxima lluvia en Melbourne, Australia.</h3>
+        <p class="text-gray-200 mb-2">
+          Este proyecto consiste en un análisis de datos meteorológicos y realizar predicciones sobre la probabilidad de lluvia en Melbourne, Australia.
+        </p>
+          <!-- Galería de imágenes del proyecto -->
+        <div class="grid grid-cols-3 gap-2 mb-3">
+            <figure class="flex flex-col items-center">
+              <img src="assets/proyecto3/analisis1.png" alt="Analisis 1" class="rounded-lg object-cover h-32 w-full cursor-pointer" onclick="openImgModal(this.src)" />
+              <figcaption class="text-sm text-gray-300 mt-1">Demostración de la predicción del modelo: entrada de características y resultado con la probabilidad estimada de lluvia.</figcaption>
+            </figure>
+            <figure class="flex flex-col items-center">
+              <img src="assets/proyecto3/analisis2.png" alt="Analisis 2" class="rounded-lg object-cover h-32 w-full cursor-pointer" onclick="openImgModal(this.src)" />
+              <figcaption class="text-sm text-gray-300 mt-1">Visualizaciones del análisis y métricas del Modelo.</figcaption>
+            </figure>
+        </div>
+        <a href="https://github.com/txxxmvs/Mineria/blob/main/mineria.ipynb" target="_blank" class="inline-flex items-center gap-2 bg-black text-white px-3 py-1 rounded-full hover:bg-sky-700 transition" title="Ver repositorio en GitHub">
+          <svg width="20" height="20"><use xlink:href="./assets/sprite.svg#github" /></svg>
+          Ver repositorio
+        </a>
+      </div>
+
+    <!-- Modal para imagen ampliada -->
+    <div id="imgModal" class="fixed inset-0 flex items-center justify-center z-50 hidden">
+      <span class="absolute top-2 right-4 text-white text-3xl cursor-pointer" onclick="closeImgModal()">&times;</span>
+      <img id="imgModalContent" src="" alt="Imagen ampliada" class="max-h-[80vh] max-w-[90vw] rounded-lg shadow-lg object-contain" />
+    </div>
+  </section>
+
+  <footer class="text-center p-4 mt-8 text-sm text-gray-500">
+      &copy; 2025 Tomas Valenzuela.
+  </footer>
+
+<script src="./main.js"></script>
+</body>
+</html>
