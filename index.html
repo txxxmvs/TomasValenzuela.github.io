@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Tomas</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--<link rel="icon" href="./assets/img2.jpeg">-->
+    <meta name="description" content="Portafolio profesional de Tomas Valenzuela - Data Analyst y Desarrollador.">
+    <meta name="keywords" content="Tomas Valenzuela, Data Analyst, Python, Power BI, Portafolio, Desarrollo Web">
 </head> 
 <body class="max-w-xl mx-auto
   min-h-dvh
@@ -61,104 +64,157 @@
 
   <!-- Presentación breve -->
   <section class="mb-6 px-4">
-    <h2 class="text-xl font-bold text-white mb-2">Sobre mí</h2>
+    <h2 class="text-xl font-bold text-white mb-2 text-center">Sobre mí</h2>
     <p class="text-gray-200">
       Me especializo en la resolución de problemas mediante soluciones tecnológicas eficientes, combinando habilidades en programación, análisis de datos y despliegue de entornos. Me considero una persona comprometida, proactiva y enfocada en el aprendizaje continuo, con orientación a resultados y al trabajo en equipo.
     </p>
   </section>
 
-  <!-- Habilidades técnicas -->
-  <section class="mb-8 px-4">
-    <h2 class="text-xl font-bold text-white mb-2">Habilidades Técnicas</h2>
+  <!-- Habilidades técnicas-->
+  <section id="habilidades" class="py-10">
+    <h2 class="text-xl font-bold text-white mb-4 text-center">Habilidades Técnicas</h2>
 
-    <!-- Lenguajes -->
-    <h3 class="text-lg font-semibold text-sky-300 mt-4 mb-2">Lenguajes</h3>
-    <ul class="space-y-2">
-      <li class="flex items-center gap-2 text-gray-200">
-        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#javascript" /></svg>
-        JavaScript
-      </li>
-      <li class="flex items-center gap-2 text-gray-200">
-        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#php" /></svg>
-        PHP
-      </li>
-      <li class="flex items-center gap-2 text-gray-200">
-        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#python" /></svg>
-        Python
-      </li>
-    </ul>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto px-6">
 
-    <!-- Cloud & BI -->
-    <h3 class="text-lg font-semibold text-sky-300 mt-4 mb-2">Cloud & BI</h3>
-    <ul class="space-y-2 mb-4">
-      <li class="flex items-center gap-2 text-gray-200">
-        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#gcp" /></svg>
-        Google Cloud Platform (GCP)
-      </li>
-      <li class="flex items-center gap-2 text-gray-200">
-        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#powerbi" /></svg>
-        Power BI
-      </li>
-    </ul>
+      <!-- Lenguajes -->
+      <div class="group bg-zinc-900 rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden text-white">
+        <h3 class="text-xl font-semibold text-white group-hover:text-gray-400 text-center mb-2">
+          Lenguajes
+        </h3>
+        <div class="max-h-0 overflow-hidden group-hover:max-h-96 transition-all duration-500 ease-in-out mt-4">
+          <div class="grid grid-cols-2 gap-4 mt-4">
+            <div class="flex flex-col items-center">
+              <svg class="w-10 h-10">
+                <use xlink:href="./assets/sprite.svg#python"></use>
+              </svg>
+              <span class="text-sm">Python</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <svg class="w-10 h-10">
+                <use xlink:href="./assets/sprite.svg#javascript"></use>
+              </svg>
+              <span class="text-sm">JavaScript</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <svg class="w-10 h-10">
+                <use xlink:href="./assets/sprite.svg#php"></use>
+              </svg>
+              <span class="text-sm">PHP</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- Desarrollo -->
-    <h3 class="text-lg font-semibold text-sky-300 mt-4 mb-2">Desarrollo</h3>
-    <ul class="space-y-2 mb-4">
-      <li class="flex items-center gap-2 text-gray-200">
-        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#html5" /></svg>
-        HTML5
-      </li>
-      <li class="flex items-center gap-2 text-gray-200">
-        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#css" /></svg>
-        CSS
-      </li>
-      <li class="flex items-center gap-2 text-gray-200">
-        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#react" /></svg>
-        React
-      </li>
-      <li class="flex items-center gap-2 text-gray-200">
-        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#tailwind" /></svg>
-        Tailwind CSS
-      </li>
-      <li class="flex items-center gap-2 text-gray-200">
-        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#nodejs" /></svg>
-        Node.js
-      </li>
-      <li class="flex items-center gap-2 text-gray-200">
-        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#express" /></svg>
-        Express
-      </li>
-      <li class="flex items-center gap-2 text-gray-200">
-        <svg width="24" height="24"><use xlink:href="./assets/sprite.svg#github" /></svg>
-        GitHub
-      </li>
-    </ul>
+      <!-- Bases De Datos -->
+      <div class="group bg-zinc-900 rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden text-white">
+        <h3 class="text-xl font-semibold text-white group-hover:text-gray-400 text-center mb-2">
+          Gestores De Bases De Datos
+        </h3>
+        <div class="max-h-0 overflow-hidden group-hover:max-h-96 transition-all duration-500 ease-in-out mt-4">
+          <div class="grid grid-cols-2 gap-4 mt-4">
+            <div class="flex flex-col items-center">
+              <svg class="w-10 h-10">
+                <use xlink:href="./assets/sprite.svg#mysql"></use>
+              </svg>
+              <span class="text-sm">MySQL</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <svg class="w-10 h-10">
+                <use xlink:href="./assets/sprite.svg#mongodb"></use>
+              </svg>
+              <span class="text-sm">MongoDB</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <svg class="w-10 h-10">
+                <use xlink:href="./assets/sprite.svg#postgresql"></use>
+              </svg>
+              <span class="text-sm">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- Bases de datos -->
-    <h3 class="text-lg font-semibold text-sky-300 mt-4 mb-2">Bases de datos</h3>
-    <ul class="space-y-2 mb-4">
-      <li class="flex items-center gap-2 text-gray-200">
-        <svg width="24" height="24"><use/></svg>
-        PostgreSQL
-      </li>
-      <li class="flex items-center gap-2 text-gray-200">
-        <svg width="24" height="24"><use/></svg>
-        HeidiSQL
-      </li>
-      <li class="flex items-center gap-2 text-gray-200">
-        <svg width="24" height="24"><use/></svg>
-        MariaDB
-      </li>
-      <li class="flex items-center gap-2 text-gray-200">
-        <svg width="24" height="24"><use/></svg>
-        BigQuery
-      </li>
-    </ul>
+      <!-- Desarrollo -->
+      <div class="group bg-zinc-900 rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden text-white">
+        <h3 class="text-xl font-semibold text-white group-hover:text-gray-400 text-center mb-2">
+          Herramientas De Desarrollo
+        </h3>
+        <div class="max-h-0 overflow-hidden group-hover:max-h-96 transition-all duration-500 ease-in-out mt-4">
+          <div class="grid grid-cols-2 gap-4 mt-4">
+            <div class="flex flex-col items-center">
+              <svg class="w-10 h-10">
+                <use xlink:href="./assets/sprite.svg#html5"></use>
+              </svg>
+              <span class="text-sm">HTML5</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <svg class="w-10 h-10">
+                <use xlink:href="./assets/sprite.svg#css"></use>
+              </svg>
+              <span class="text-sm">CSS3</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <svg class="w-10 h-10">
+                <use xlink:href="./assets/sprite.svg#react"></use>
+              </svg>
+              <span class="text-sm">React</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <svg class="w-10 h-10">
+                <use xlink:href="./assets/sprite.svg#tailwind"></use>
+              </svg>
+              <span class="text-sm">Tailwind CSS</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <svg class="w-10 h-10">
+                <use xlink:href="./assets/sprite.svg#nodejs"></use>
+              </svg>
+              <span class="text-sm">Node.js</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <svg class="w-10 h-10">
+                <use xlink:href="./assets/sprite.svg#express"></use>
+              </svg>
+              <span class="text-sm">Express</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <svg class="w-10 h-10">
+                <use xlink:href="./assets/sprite.svg#github"></use>
+              </svg>
+              <span class="text-sm">GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud & BI -->
+      <div class="group bg-zinc-900 rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden text-white">
+        <h3 class="text-xl font-semibold text-white group-hover:text-gray-400 text-center mb-2">
+          Cloud & BI
+        </h3>
+        <div class="max-h-0 overflow-hidden group-hover:max-h-96 transition-all duration-500 ease-in-out mt-4">
+          <div class="grid grid-cols-2 gap-4 mt-4">
+            <div class="flex flex-col items-center">
+              <svg class="w-10 h-10">
+                <use xlink:href="./assets/sprite.svg#powerbi"></use>
+              </svg>
+              <span class="text-sm">Power BI</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <svg class="w-10 h-10">
+                <use xlink:href="./assets/sprite.svg#gcp"></use>
+              </svg>
+              <span class="text-sm">Google Cloud Platform</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Proyectos -->
   <section class="mb-8 px-4">
-    <h2 class="text-xl font-bold text-white mb-4">Proyectos</h2>
+    <h2 class="text-xl font-bold text-white mb-4 text-center">Proyectos</h2>
     <div class="space-y-6">
 
       <!-- Proyecto 1 -->
